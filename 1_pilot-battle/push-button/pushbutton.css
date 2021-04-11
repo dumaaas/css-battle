@@ -1,0 +1,61 @@
+.element {
+    background: #6592CF;
+    position: relative;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section > p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+.first-el {
+    position: absolute;
+    z-index: 1;
+    top: 75px;
+    left: 50px;
+    height: 150px;
+    width: 300px;
+    background: #243D83;
+}
+
+.second-el {
+    z-index: 2;
+    top: 25px;
+    left: 75px;
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: #243D83;
+    border-radius: 50%;
+    border: 50px solid #6592CF;
+}
+
+.third-el {
+    z-index: 3;
+    position: absolute;
+    top: 125px;
+    left: 175px;
+    background: #EEB850;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+section>style {
+    border-radius: 8px;
+    display: block;
+    white-space: pre;
+    background-color: #333;
+    color: white;
+    font: 12px Monaco;
+    padding: 0 15px;
+    margin-top: 1rem;
+    position: relative;
+}

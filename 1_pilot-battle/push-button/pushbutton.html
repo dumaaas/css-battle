@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pushbutton.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <p>OUTPUT</p>
+            <div class="element">
+                <div class="first-el">
+                </div>
+                <div class="second-el">
+                </div>
+                <div class="third-el">
+                </div>
+            </div>
+
+            <p>EDITOR</p>
+            <style scoped contenteditable>
+                .element {
+                    background: #6592CF;
+                    position: relative;
+                }
+
+                .first-el {
+                    position: absolute;
+                    z-index: 1;
+                    top: 75px;
+                    left: 50px;
+                    height: 150px;
+                    width: 300px;
+                    background: #243D83;
+                }
+
+                .second-el {
+                    z-index: 2;
+                    top: 25px;
+                    left: 75px;
+                    position: absolute;
+                    height: 150px;
+                    width: 150px;
+                    background-color: #243D83;
+                    border-radius: 50%;
+                    border: 50px solid #6592CF;
+                }
+
+                .third-el {
+                    z-index: 3;
+                    position: absolute;
+                    top: 125px;
+                    left: 175px;
+                    background: #EEB850;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                }
+            </style>
+        </section>
+        <section>
+            <p>TARGET</p>
+            <img src="pushbutton.png">
+        </section>
+    </main>
+
+
+</body>
+
+</html>

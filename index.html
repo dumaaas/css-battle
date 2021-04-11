@@ -1,13 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Battle</title>
 </head>
+
 <body>
-    <a href="../simple-square/simplesquare.html">Simple Square</a>
-    <a href="../carrom/carrom.html">Carrom</a>
+    <header>
+        <div class="header-left">
+            <img class="logo-img" width="45px" height="60px" src="img/logo.png" alt="">
+            <p class="logo-text">
+                CSS Battle - dumaaas
+            </p>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <ul>
+                <li>
+                    #1 Pilot Battle
+                </li>
+                <li>
+                    #2 Pilot Battle
+                </li>
+                <li>
+                    #3 Pilot Battle
+                </li>
+                <li>
+                    #4 Pilot Battle
+                </li>
+            </ul>
+        </aside>
+        <section>
+            <h1>#1 Pilot Battle</h1>
+            <ul class="section-list">
+                <li>
+                    <a href="../1_pilot-battle/simple-square/simplesquare.html">Simple Square</a>
+                </li>
+                <li>
+                    <a href="../1_pilot-battle/carrom/carrom.html">Carrom</a>
+                </li>
+                <li>
+                    <a href="../1_pilot-battle/push-button/pushbutton.html">Push Button</a>
+                </li>
+            </ul>
+        </section>
+    </main>
 </body>
+<style>
+    body {
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+    ul {
+        padding: 0;
+        color: red;
+    }
+    li {
+        padding-left: 20px;
+        padding-top: 15px;
+        color: white;
+        font-size: 20px;
+    }
+    header {
+        height: 80px;
+        background: #3D9970;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    aside {
+        width: 200px;
+        background: black;
+        height:100vh;
+        position: fixed;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    section {
+        padding-top: 10px;
+        padding-left: 200px;
+        width: 100%;
+    }
+
+    section > h1 {
+        font-size: 35px;
+        border-bottom: 2px solid black;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    .header-left {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo-img {
+        padding-left: 20px;
+        padding-top: 12px;
+    }
+
+    .logo-text {
+        padding-top: 29px;
+        padding-left: 15px;
+        font-size: 25px;
+        font-weight: 700;
+        color: #001f3f;
+    }
+</style>
+
 </html>

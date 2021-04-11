@@ -1,0 +1,33 @@
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section > p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+div {
+    background: #5d3a3a;
+    width: 400px;
+    height: 300px;
+}
+div > div {
+    width: 200px;
+    height: 200px;
+    background: #B5E0BA;
+}
+
+section > style {
+    border-radius: 8px;
+    display: block;
+    white-space: pre;
+    background-color: #333;
+    color: white;
+    font: 12px Monaco;
+    padding: 0 15px;
+    margin-top: 1rem;
+    position: relative;
+}
