@@ -1,0 +1,12 @@
+div {
+    margin: -8px;
+    background: #5d3a3a;
+    width: 400px;
+    height: 300px;
+}
+div > div {
+    margin: -8px;
+    width: 200px;
+    height: 200px;
+    background: #B5E0BA;
+}
