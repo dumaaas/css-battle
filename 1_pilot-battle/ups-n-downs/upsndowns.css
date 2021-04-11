@@ -1,0 +1,45 @@
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.output {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    background: #62306D;
+
+}
+
+section>p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.el {
+    position: absolute;
+    top: 50px;
+    left: 54px;
+}
+
+.el>div {
+    width: 100px;
+    height: 100px;
+    background: #F7EC7D;
+    display: inline-block;
+    margin-left: -4px;
+}
+
+.el-1 {
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.el-2 {
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    margin-bottom: 100px;
+}
+
