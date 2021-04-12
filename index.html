@@ -6,31 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Battle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
 </head>
 
 <body>
-    <header>
-        <div class="header-left">
-            <img class="logo-img" width="45px" height="60px" src="img/logo.png" alt="">
-            <p class="logo-text">
-                CSS Battle - dumaaas
-            </p>
-        </div>
-    </header>
     <main>
         <aside>
+            <div class="header-left">
+                <img class="logo-img" width="45px" height="60px" src="img/logo.png" alt="">
+                <p class="logo-text">
+                    CSS Battle
+                </p>
+            </div>
             <ul>
                 <li>
-                    #1 Pilot Battle
+                    <i class="far fa-paper-plane"></i>
+                    <span>
+                        #1 Pilot Battle
+                    </span>
                 </li>
                 <li>
-                    #2 Pilot Battle
+                    <i class="far fa-eye"></i>
+                    <span>
+                        #2 Visibility
+                    </span>
                 </li>
                 <li>
-                    #3 Pilot Battle
+                    <i class="far fa-hand-pointer"></i>
+                    <span>
+                        #3 Cursor
+                    </span>
                 </li>
                 <li>
-                    #4 Pilot Battle
+                    <i class="fas fa-tv"></i>
+                    <span>
+                        #4 Display
+                    </span>
                 </li>
             </ul>
         </aside>
@@ -74,6 +87,8 @@
 <style>
     body {
         margin: 0;
+        background: #8B9CC9;
+
     }
 
     p {
@@ -82,18 +97,31 @@
 
     ul {
         padding: 0;
+        list-style: none;
     }
 
     li {
         padding-left: 20px;
         padding-top: 15px;
-        color: white;
+        color: #8B9CC9;
         font-size: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        background: #142E71;
+        display: inline-block;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    li>span {
+        margin-left: 15px;
     }
 
     header {
         height: 80px;
-        background: #3D9970;
+        background: #222D33;
+        position: fixed;
+        width: 100%;
     }
 
     a {
@@ -103,46 +131,62 @@
     }
 
     aside {
-        width: 200px;
-        background: black;
-        height: 100vh;
+        width: 290px;
+        background: #071A50;
+        height: 100%;
         position: fixed;
     }
 
     main {
         display: flex;
         flex-direction: row;
+        position: relative;
     }
 
     section {
-        padding-top: 10px;
-        padding-left: 200px;
+        padding-left: 290px;
         width: 100%;
+        background: #8B9CC9;
     }
 
+    li::before {
+        content: '';
+        position: absolute;
+        left: 238px;
+        top: 153px;
+        width: 0;
+        height: 0;
+        border-left: 35px solid transparent;
+        border-right: 35px solid transparent;
+        border-top: 35px solid #8B9CC9;
+        transform: rotate(90deg);
+    }
+
+    
     section>h1 {
         font-size: 35px;
-        border-bottom: 2px solid black;
+        border-bottom: 1px solid #142E71;
         padding-left: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
+        color: #142E71;
+        text-align: center;
     }
 
     .header-left {
         display: flex;
         flex-direction: row;
-    }
-
-    .logo-img {
-        padding-left: 20px;
-        padding-top: 12px;
+        padding-top: 20px;
+        padding-left: 40px;
+        padding-bottom: 19px;
+        border-bottom: 1px solid #142E71;
     }
 
     .logo-text {
-        padding-top: 29px;
+        padding-top: 20px;
         padding-left: 15px;
         font-size: 25px;
         font-weight: 700;
-        color: #001f3f;
+        color: #8B9CC9;
     }
 
     .content {
@@ -151,7 +195,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-
+        padding-top: 30px;
     }
 
     .first {
@@ -179,37 +223,45 @@
     .third {
         background-image: url("1_pilot-battle/push-button/pushbutton.png");
     }
+
     .third>a {
         color: #243D83;
         text-align: center;
         margin-top: -8%;
         font-weight: 600;
     }
+
     .fourth {
         background-image: url("1_pilot-battle/ups-n-downs/upsndowns.png");
     }
+
     .fourth>a {
         color: #F7EC7D;
         text-align: center;
         margin-top: -12%;
-        font-weight: 600; 
+        font-weight: 600;
     }
+
     .fifth {
         background-image: url("1_pilot-battle/acid-rain/acidrain.png");
     }
+
     .fifth>a {
         color: #998235;
-        font-weight: 600; 
+        font-weight: 600;
     }
+
     .sixth {
         background-image: url("1_pilot-battle/missing-slice/missingslice.png");
     }
+
     .sixth>a {
         color: #F7F3D7;
-        font-weight: 600; 
+        font-weight: 600;
         margin-top: 45%;
         margin-left: 55%;
     }
+
     .card {
         padding: 50px;
         border-radius: 30px;
