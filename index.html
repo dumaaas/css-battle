@@ -36,38 +36,38 @@
         </aside>
         <section>
             <h1>#1 Pilot Battle</h1>
-            <ul class="section-list">
-                <li>
+            <div class="content">
+                <div class="card first">
                     <a href="1_pilot-battle/simple-square/simplesquare.html">
                         Simple Square
                     </a>
-                </li>
-                <li>
+                </div>
+                <div class="card second">
                     <a href="1_pilot-battle/carrom/carrom.html">
                         Carrom
                     </a>
-                </li>
-                <li>
+                </div>
+                <div class="card third">
                     <a href="1_pilot-battle/push-button/pushbutton.html">
                         Push Button
                     </a>
-                </li>
-                <li>
+                </div>
+                <div class="card fourth">
                     <a href="1_pilot-battle/ups-n-downs/upsndowns.html">
                         Ups n Downs
                     </a>
-                </li>
-                <li>
+                </div>
+                <div class="card fifth">
                     <a href="1_pilot-battle/acid-rain/acidrain.html">
                         Acid Rain
                     </a>
-                </li>
-                <li>
+                </div>
+                <div class="card sixth">
                     <a href="1_pilot-battle/missing-slice/missingslice.html">
-                        Missing Slice
+                        ? Slice
                     </a>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
     </main>
 </body>
@@ -79,29 +79,33 @@
     p {
         margin: 0;
     }
+
     ul {
         padding: 0;
-        color: red;
     }
+
     li {
         padding-left: 20px;
         padding-top: 15px;
         color: white;
         font-size: 20px;
     }
+
     header {
         height: 80px;
         background: #3D9970;
     }
+
     a {
         text-decoration: none;
         color: black;
+        display: block;
     }
 
     aside {
         width: 200px;
         background: black;
-        height:100vh;
+        height: 100vh;
         position: fixed;
     }
 
@@ -116,7 +120,7 @@
         width: 100%;
     }
 
-    section > h1 {
+    section>h1 {
         font-size: 35px;
         border-bottom: 2px solid black;
         padding-left: 20px;
@@ -139,6 +143,84 @@
         font-size: 25px;
         font-weight: 700;
         color: #001f3f;
+    }
+
+    .content {
+        font-size: 25px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+
+    .first {
+        background-image: url("1_pilot-battle/simple-square/simplesquare.png");
+    }
+
+    .first>a {
+        color: #5D3A3A;
+        margin-left: -27px;
+        margin-top: 36px;
+        font-weight: 600;
+    }
+
+    .second {
+        background-image: url("1_pilot-battle/carrom/carrom.png");
+    }
+
+    .second>a {
+        color: #FDC57B;
+        text-align: center;
+        margin-top: 25%;
+        font-weight: 600;
+    }
+
+    .third {
+        background-image: url("1_pilot-battle/push-button/pushbutton.png");
+    }
+    .third>a {
+        color: #243D83;
+        text-align: center;
+        margin-top: -8%;
+        font-weight: 600;
+    }
+    .fourth {
+        background-image: url("1_pilot-battle/ups-n-downs/upsndowns.png");
+    }
+    .fourth>a {
+        color: #F7EC7D;
+        text-align: center;
+        margin-top: -12%;
+        font-weight: 600; 
+    }
+    .fifth {
+        background-image: url("1_pilot-battle/acid-rain/acidrain.png");
+    }
+    .fifth>a {
+        color: #998235;
+        font-weight: 600; 
+    }
+    .sixth {
+        background-image: url("1_pilot-battle/missing-slice/missingslice.png");
+    }
+    .sixth>a {
+        color: #F7F3D7;
+        font-weight: 600; 
+        margin-top: 45%;
+        margin-left: 55%;
+    }
+    .card {
+        padding: 50px;
+        border-radius: 30px;
+        width: 300px !important;
+        height: 200px;
+        margin: 40px;
+        transition: ease-in 0.4s;
+    }
+
+    .card:hover {
+        transform: scale(1.1)
     }
 </style>
 
