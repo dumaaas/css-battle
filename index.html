@@ -88,7 +88,7 @@
     body {
         margin: 0;
         background: #8B9CC9;
-
+        font-family: 'Courier New', monospace;
     }
 
     p {
@@ -104,13 +104,16 @@
         padding-left: 20px;
         padding-top: 15px;
         color: #8B9CC9;
-        font-size: 20px;
+        font-size: 17px;
+        letter-spacing: -1.5px;
         margin-left: 20px;
         margin-top: 20px;
         background: #142E71;
         display: inline-block;
         padding: 20px;
         border-radius: 10px;
+        transition: ease 0.5s;
+
     }
 
     li>span {
@@ -149,20 +152,25 @@
         background: #8B9CC9;
     }
 
-    li::before {
+    aside::before {
         content: '';
         position: absolute;
         left: 238px;
-        top: 153px;
+        top: 148px;
         width: 0;
         height: 0;
         border-left: 35px solid transparent;
         border-right: 35px solid transparent;
         border-top: 35px solid #8B9CC9;
         transform: rotate(90deg);
+        cursor:initial;
     }
 
-    
+    li:hover {
+        color: #EEB850;
+        cursor: pointer;
+    }
+
     section>h1 {
         font-size: 35px;
         border-bottom: 1px solid #142E71;
@@ -190,7 +198,7 @@
     }
 
     .content {
-        font-size: 25px;
+        font-size: 20px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
