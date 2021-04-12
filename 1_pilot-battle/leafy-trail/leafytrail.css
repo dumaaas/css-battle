@@ -8,6 +8,14 @@ main {
     justify-content: space-evenly;
 }
 
+img {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+section {
+    padding-bottom: 20px;
+}
+
 section>p {
     text-align: center;
     font-size: 25px;
@@ -25,12 +33,14 @@ section>style {
     padding: 0 15px;
     margin-top: 1rem;
     position: relative;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 .wrapper {
     background: #0B2429;
     width: 400px;
     height: 300px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 .el {

@@ -8,6 +8,11 @@ main {
     justify-content: space-evenly;
 }
 
+img {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+}
+
 section>p {
     text-align: center;
     font-size: 25px;
@@ -26,6 +31,8 @@ section>style {
     padding-left: -50px;
     margin-top: 1rem;
     position: relative;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+
 }
 
 .wrapper {
@@ -34,6 +41,8 @@ section>style {
     height: 300px !important;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+
 }
 
 .bg {
